@@ -54,12 +54,12 @@ class _BmiCalcState extends State<BmiCalc> {
             style: TextStyle(fontSize: 25),
           ),
           TextButton(onPressed: () {
-            setState(() {
               calculate();
-            });
+              setState(() {
+              });
             },
               child: Text('Calculate')),
-          Text('Result')
+          Text(result.toString()),
         ],
       ),
     );
